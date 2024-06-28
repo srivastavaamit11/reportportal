@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import ReportGenerator from './Component/ReportGenerator';
+import ReportFormat from './Component/ReportFormat.jsx';
+import Demo from './Component/demo.tsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='flx-right'>
+        <div className='title'>
+          <div>
+            <h1>Report Portal</h1>
+          </div>
+        </div>
+        <ReportGenerator />
+      </div>
+      {/* <Demo /> */}
     </div>
   );
 }
